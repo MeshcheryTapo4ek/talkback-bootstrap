@@ -1,0 +1,18 @@
+[project]
+name = "talkback-bootstrap"
+version = "0.1.0"
+description = "Minimal ONVIF RTSP talk-back initiator for Reolink cameras"
+authors = [{ name = "MeshcheryTapo4ek" }]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "pydantic>=2.0,<3.0",
+    "pydantic-settings>=0.1,<1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
